@@ -3,6 +3,7 @@ const request = require('request');
 //request is a library that doesn't supprt promises,
 // so has to go inside the promise 
 //like geocode as in city postcode...parse in a postcode to address for example
+//aud endpoint - https://blockchain.info/ticker
 var minerAddress = (address) => {
   return new Promise((resolve, reject) => {
     var encodedAddress = encodeURIComponent(address);
